@@ -8,7 +8,7 @@ fun main() {
     try {
         runBlocking {
             withContext(coroutineContext) {
-                throw IllegalArgumentException(RuntimeException("oh no!"))
+                throw IllegalArgumentException("oh no!")
             }
         }
     } catch (t: Throwable) {
